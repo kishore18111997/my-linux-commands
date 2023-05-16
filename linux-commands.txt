@@ -1,0 +1,114 @@
+pwd
+- to show the path of current directory
+
+ls 
+- to list the contents of the present directory
+
+ls -la
+- to list all the contents including hidden files of the present directory
+
+ls -l
+- to list the contents along with ownership details of the present directory
+
+cd newfolder
+- to open newfolder
+
+start image.jpg
+- to open a image called image.jpg (this command can be used to open media files)
+
+cat index.html
+- to show the contents of the file on the terminal
+
+cd ..
+- to get back to the previous folder
+
+mkdir newfolder
+- to create newfolder 
+
+rmdir newfolder
+- to delete newfolder
+
+rm index.html
+- to delete a file called index.html
+
+touch index.html
+- to create a new file called index.html
+
+vi, vim, nano index.html
+- to open the file index.html in respective editors vi or vim or nano 
+
+cntrl + c
+- to abort a ongoing command
+
+&&
+- use this in the middle of 2 commands to execute at a time
+
+cp index.html /home/ubuntu/newfolder
+- to copy file index.html to path /home/ubuntu/newfolder
+
+mv index.html /home/ubuntu/newfolder
+- to move file index.html to path /home/ubuntu/newfolder
+
+df -h 
+- to show the memory utilization of the system
+
+zip -r folder index.html web.html
+- top zip the files index.html and web.html to folder
+
+rm -r oldfolder
+- to forcefully delete a folder that is not empty
+
+tar -zvxf folder.zip
+- to unzip folder.zip
+
+find/ -name foldername
+- to find a file or folder called foldername
+
+useradd -m -d /home/user1 user1
+- to add a user called user1 in a location /home/user1
+
+useradd -m user1
+- to add a user called user1
+
+passwd user1
+- to create a password for user1
+
+sudo usermod -aG sudo user1
+- to add the user user1 to sudo group
+
+sudo su user1
+- to login as user1
+
+sudo su
+- to login as root user
+
+ssh-keygen
+- to create a ssh keypair
+
+ssh-copy-id -i /home/ubuntu/.ssh/authorized_keys user2@192.168.33.20
+- to copy public key to another system of ID user2@192.168.33.20
+
+ssh-keygen -t ed25519 -C user1
+- to create a ssh keypair of algorithm ed25519 
+
+chmod a+x hello.sh
+- to change tthe mod of hello.sh
+
+chown user1 index.html
+- to give the owership of index.html to user1
+
+chown .sudo index.html
+- to change the owership of index.html to sudo group
+
+chgrp sudo index.html
+- to change the owership of index.html to sudo group
+
+sudo systemctl start sevicename
+- to start a service
+
+sudo systemctl restart sevicename
+- to restart a service
+
+sudo systemctl enable sevicename
+- to start a service as soon as i login to the system
+
