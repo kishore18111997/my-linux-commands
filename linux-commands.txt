@@ -112,3 +112,5 @@ sudo systemctl restart sevicename
 sudo systemctl enable sevicename
 - to start a service as soon as i login to the system
 
+which servicename
+- to show the executable path of the installed service name
