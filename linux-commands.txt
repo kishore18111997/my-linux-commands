@@ -114,3 +114,6 @@ sudo systemctl enable sevicename
 
 which servicename
 - to show the executable path of the installed service name
+
+locate filename
+- to search the file (you need to install a s/w called plocate : sudo apt install plocate)
