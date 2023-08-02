@@ -117,3 +117,32 @@ which servicename
 
 locate filename
 - to search the file (you need to install a s/w called plocate : sudo apt install plocate)
+
+sudo useradd -m -d /home/kishore kishore
+- to add a user and add a default path to that user
+
+sudo passwd kishore
+- to add a password to that user
+
+sudo usermod -aG sudo kishore
+- to add user to sudo mode
+
+sudo su kishore
+- to checkout ro kishore user
+
+sudo chown -R dockeradmin:dockeradmin /home/docker/file.txt
+- to change the ownership of the file.txt to dockeradmin group and dockeradmin user
+
+
+
+
+
+
+
+
+
+
+
+
+
+
