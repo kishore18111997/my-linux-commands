@@ -133,7 +133,8 @@ sudo su kishore
 sudo chown -R dockeradmin:dockeradmin /home/docker/file.txt
 - to change the ownership of the file.txt to dockeradmin group and dockeradmin user
 
-
+update-alternatives --config application_name
+- to change application_name to a different version if already installed
 
 
 
