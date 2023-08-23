@@ -136,6 +136,58 @@ sudo chown -R dockeradmin:dockeradmin /home/docker/file.txt
 update-alternatives --config application_name
 - to change application_name to a different version if already installed
 
+grep kishore -r mail.txt 
+- this command finds all the string called kishore in mail.txt file and displays on the terminal
+
+grep kishore -r * 
+- this command finds all the string called kishore in all the files present in the system and displays on the terminal
+
+grep kishore -r -i mail.txt
+- this command finds all the string called kishore(including case sensitiveness) in mail.txt file and displays on the terminal
+
+grep kishore -r * > output.txt
+- this command finds all the string called kishore in all the files present in the system and paste the result in a file called output.txt
+
+cat file.txt | wc -l
+- to check how many lines are there in file.txt
+
+grep kishore -r -i -v mail.txt
+- displays all the lines that do not contain kishore string from file called mail.txt
+
+grep kishore -n -i mail.txt
+- displays all the lines including the line number that contain kishore in the file called mail.txt
+
+grep kishore -c mail.txt
+- displays the count of word kishore in a file called mail.txt
+
+awk '{print $1}' file.txt
+- displays all first column contents present in a file called file.txt, "spaces" in file.txt is being treated as column seperator by default
+
+awk '{print $NF}' file.txt
+- displays all last column contents present in a file called file.txt
+
+awk -F 'a' '{print $1}' file.txt
+- displays all first column contents present in a file called file.txt, each letter called 'a' in file.txt is being treated as column seperator here 
+
+awk '{print $1 $2}' file.txt
+- to show all the contents of column 1 and column2 from file.txt
+
+awk '{print $1"\t"$2}' file.txt
+- to show all the contents of column 1 and column2 with a tab space from file.txt
+
+awk '{print $1}' file.txt | uniq
+- displays all the unique first column contents present in a file called file.txt
+
+df -h | awk '{print $1"\t"$2"\t"$4}'
+- you can also run awk on other command outputs using piping
+- this command shows the contents of column 1,2,4 from the output of df -h command
+
+sed 's/rama/bhima/' mail.txt
+- this command will display all the string from the file called mail.txt by replacing a string called rama into bhima but does not changge it in the file
+
+sed -i 's/rama/bhima/' mail.txt
+- this command will change all words called rama into bhima in mail.txt file and keep the changes
+
 
 
 
