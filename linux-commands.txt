@@ -43,6 +43,10 @@
 15) &&
 - use this in the middle of 2 commands to execute at a time
 
+
+15.1) ;
+- use this in the middle of 2 commands to execute at a time, this works even if any of the command is invalid
+
 16) cp index.html /home/ubuntu/newfolder
 - to copy file index.html to path /home/ubuntu/newfolder
 
@@ -264,15 +268,29 @@
 66) find -type f -name image2021*.jpg -exec chmod -R root:root {} +
 - finds all files named as image2021*.jpg and performs "chmod -R root:root" command on each file 
 
+67) history
+- gives the history of all the commands that are run
 
+68) ctrl + r
+- can search any commands that is present in run history by searching its name
 
+69) sudo !!
+- runs the last executed command by adding sudo to it
 
+70) truncate -s 0 file.txt
+- empties  the content of file.txt
 
+71) whoami 
+- displays the name of user you are logged in as
 
+72) ctrl + z
+- executes the running job in background
 
+73) jobs
+- shows details of all jobs running in background
 
-
-
+74) fg 1
+brings back the job number 1 that is running in background to foreground
 
 
 
