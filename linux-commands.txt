@@ -1,191 +1,209 @@
-pwd
+1) pwd
 - to show the path of current directory
-
-ls 
+ 
+2) ls 
 - to list the contents of the present directory
 
-ls -la
+3) ls -la
 - to list all the contents including hidden files of the present directory
 
-ls -l
+4) ls -l
 - to list the contents along with ownership details of the present directory
 
-cd newfolder
+5) cd newfolder
 - to open newfolder
 
-start image.jpg
+6) start image.jpg
 - to open a image called image.jpg (this command can be used to open media files)
 
-cat index.html
+7) cat index.html
 - to show the contents of the file on the terminal
 
-cd ..
+8) cd ..
 - to get back to the previous folder
 
-mkdir newfolder
+9) mkdir newfolder
 - to create newfolder 
 
-rmdir newfolder
+10) rmdir newfolder
 - to delete newfolder
 
-rm index.html
+11) rm index.html
 - to delete a file called index.html
 
-touch index.html
+12) touch index.html
 - to create a new file called index.html
 
-vi, vim, nano index.html
+13) vi, vim, nano index.html
 - to open the file index.html in respective editors vi or vim or nano 
 
-cntrl + c
+14) cntrl + c
 - to abort a ongoing command
 
-&&
+15) &&
 - use this in the middle of 2 commands to execute at a time
 
-cp index.html /home/ubuntu/newfolder
+16) cp index.html /home/ubuntu/newfolder
 - to copy file index.html to path /home/ubuntu/newfolder
 
-mv index.html /home/ubuntu/newfolder
+17) mv index.html /home/ubuntu/newfolder
 - to move file index.html to path /home/ubuntu/newfolder
 
-df -h 
+18) df -h 
 - to show the memory utilization of the system
 
-zip -r folder index.html web.html
+19) zip -r folder index.html web.html
 - top zip the files index.html and web.html to folder
 
-rm -r oldfolder
+20) rm -r oldfolder
 - to forcefully delete a folder that is not empty
 
-tar -zvxf folder.zip
+21) tar -zvxf folder.zip
 - to unzip folder.zip
 
-find/ -name foldername
+22) find/ -name foldername
 - to find a file or folder called foldername
 
-useradd -m -d /home/user1 user1
+23) useradd -m -d /home/user1 user1
 - to add a user called user1 in a location /home/user1
 
-useradd -m user1
+24)useradd -m user1
 - to add a user called user1
 
-passwd user1
+25) passwd user1
 - to create a password for user1
 
-sudo usermod -aG sudo user1
+26) sudo usermod -aG sudo user1
 - to add the user user1 to sudo group
 
-sudo su user1
+27) sudo su user1
 - to login as user1
 
-sudo su
+28) sudo su
 - to login as root user
 
-ssh-keygen
+29) ssh-keygen
 - to create a ssh keypair
 
-ssh-copy-id -i /home/ubuntu/.ssh/authorized_keys user2@192.168.33.20
+30) ssh-copy-id -i /home/ubuntu/.ssh/authorized_keys user2@192.168.33.20
 - to copy public key to another system of ID user2@192.168.33.20
 
-ssh-keygen -t ed25519 -C user1
+32) ssh-keygen -t ed25519 -C user1
 - to create a ssh keypair of algorithm ed25519 
 
-chmod a+x hello.sh
+33) chmod a+x hello.sh
 - to change tthe mod of hello.sh
 
-chown user1 index.html
+34) chown user1 index.html
 - to give the owership of index.html to user1
 
-chown .sudo index.html
+35) chown .sudo index.html
 - to change the owership of index.html to sudo group
 
-chgrp sudo index.html
+36) chgrp sudo index.html
 - to change the owership of index.html to sudo group
 
-sudo systemctl start sevicename
+37) sudo systemctl start sevicename
 - to start a service
 
-sudo systemctl restart sevicename
+38) sudo systemctl restart sevicename
 - to restart a service
 
-sudo systemctl enable sevicename
+39) sudo systemctl enable sevicename
 - to start a service as soon as i login to the system
 
-which servicename
+40) which servicename
 - to show the executable path of the installed service name
 
-locate filename
+41) locate filename
 - to search the file (you need to install a s/w called plocate : sudo apt install plocate)
 
-sudo useradd -m -d /home/kishore kishore
+42) sudo useradd -m -d /home/kishore kishore
 - to add a user and add a default path to that user
 
-sudo passwd kishore
+43) sudo passwd kishore
 - to add a password to that user
 
-sudo usermod -aG sudo kishore
+44) sudo usermod -aG sudo kishore
 - to add user to sudo mode
 
-sudo su kishore
+45) sudo su kishore
 - to checkout ro kishore user
 
-sudo chown -R dockeradmin:dockeradmin /home/docker/file.txt
+46) sudo chown -R dockeradmin:dockeradmin /home/docker/file.txt
 - to change the ownership of the file.txt to dockeradmin group and dockeradmin user
 
-update-alternatives --config application_name
+47) update-alternatives --config application_name
 - to change application_name to a different version if already installed
 
-grep kishore -r mail.txt 
+
+
+48) [grep commands]
+
+
+
+48.1) grep kishore -r mail.txt 
 - this command finds all the string called kishore in mail.txt file and displays on the terminal
 
-grep kishore -r * 
+48.2) grep kishore -r * 
 - this command finds all the string called kishore in all the files present in the system and displays on the terminal
 
-grep kishore -r -i mail.txt
+48.3) grep kishore -r -i mail.txt
 - this command finds all the string called kishore(including case sensitiveness) in mail.txt file and displays on the terminal
 
-grep kishore -r * > output.txt
+48.4) grep kishore -r * > output.txt
 - this command finds all the string called kishore in all the files present in the system and paste the result in a file called output.txt
 
-cat file.txt | wc -l
+48.5) cat file.txt | wc -l
 - to check how many lines are there in file.txt
 
-grep kishore -r -i -v mail.txt
+48.6) grep kishore -r -i -v mail.txt
 - displays all the lines that do not contain kishore string from file called mail.txt
 
-grep kishore -n -i mail.txt
+48.7) grep kishore -n -i mail.txt
 - displays all the lines including the line number that contain kishore in the file called mail.txt
 
-grep kishore -c mail.txt
+48.8) grep kishore -c mail.txt
 - displays the count of word kishore in a file called mail.txt
 
-awk '{print $1}' file.txt
+
+
+49) [awk commands]
+
+
+
+49.1) awk '{print $1}' file.txt
 - displays all first column contents present in a file called file.txt, "spaces" in file.txt is being treated as column seperator by default
 
-awk '{print $NF}' file.txt
+49.2) awk '{print $NF}' file.txt
 - displays all last column contents present in a file called file.txt
 
-awk -F 'a' '{print $1}' file.txt
+49.3) awk -F 'a' '{print $1}' file.txt
 - displays all first column contents present in a file called file.txt, each letter called 'a' in file.txt is being treated as column seperator here 
 
-awk '{print $1 $2}' file.txt
+49.4) awk '{print $1 $2}' file.txt
 - to show all the contents of column 1 and column2 from file.txt
 
-awk '{print $1"\t"$2}' file.txt
+49.5) awk '{print $1"\t"$2}' file.txt
 - to show all the contents of column 1 and column2 with a tab space from file.txt
 
-awk '{print $1}' file.txt | uniq
+49.6) awk '{print $1}' file.txt | uniq
 - displays all the unique first column contents present in a file called file.txt
 
-df -h | awk '{print $1"\t"$2"\t"$4}'
+49.7) df -h | awk '{print $1"\t"$2"\t"$4}'
 - you can also run awk on other command outputs using piping
 - this command shows the contents of column 1,2,4 from the output of df -h command
 
-sed 's/rama/bhima/' mail.txt
+
+
+50) [sed commands]
+
+
+
+50.1) sed 's/rama/bhima/' mail.txt
 - this command will display all the string from the file called mail.txt by replacing a string called rama into bhima but does not changge it in the file
 
-sed -i 's/rama/bhima/' mail.txt
+50.2) sed -i 's/rama/bhima/' mail.txt
 - this command will change all words called rama into bhima in mail.txt file and keep the changes
 
 
