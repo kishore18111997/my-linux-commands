@@ -246,14 +246,23 @@
 62) ln /etc/sudo/sudoers.config /home/ubuntu/new_link
 - creates a shortcut of /etc/sudo/sudoers.config in a path called /home/ubuntu/ and names that shortcut as new_link   [HARD LINK]
 
+63) find /home/ubuntu -name "*.txt"
+- displays all files from /home/ubuntu directory that ends with .txt prefix
 
+63) find /home/ubuntu -name "*.txt" | grep -v .hidden
+- displays all files from /home/ubuntu directory that ends with .txt prefix by ignoring the files that has .hidden string in its absolute path
 
+64) find -name kishore -type f
+- displays all files named as kishore ["f" for file in type]
 
+64) find -name kishore -type d
+- displays all directories named as kishore ["d" for directory in type]
 
+65) find -type f -name image2021*.jpg -exec rm {} +
+- finds all files named as image2021*.jpg and deletes all of them
 
-
-
-
+66) find -type f -name image2021*.jpg -exec chmod -R root:root {} +
+- finds all files named as image2021*.jpg and performs "chmod -R root:root" command on each file 
 
 
 
