@@ -206,6 +206,70 @@
 50.2) sed -i 's/rama/bhima/' mail.txt
 - this command will change all words called rama into bhima in mail.txt file and keep the changes
 
+51) uptime
+- shows the age of the system, also shows the number of users logged in at the present time
+
+52) wall hello 
+- broadcasts a message called hello to all logged users
+
+53) who 
+- shows all the users logged into the machine
+
+54) free
+- displays all storage details of the system
+
+55) sort file.txt
+- displays all the lines of the file in descending order
+
+56) sort -r file.txt
+- displays all the lines of the file in ascending order
+
+57) shutdown -h now
+- shutsdown the system
+
+
+58) shutdown -r now
+- restarts the system
+
+59) man ls 
+- gives more details of ls command(cant execute on all commands)
+
+60) tail -n 5 file.txt
+- displays last 5 lines of file.txt
+
+61) head -n 5 file.txt
+- displays first 5 lines of file.txt
+
+62) ln -s /etc/sudo/sudoers.config /home/ubuntu/
+- creates a shortcut of /etc/sudo/sudoers.config in a path called /home/ubuntu/    [SOFT LINK or SYMBOLIC LINK]
+
+62) ln /etc/sudo/sudoers.config /home/ubuntu/new_link
+- creates a shortcut of /etc/sudo/sudoers.config in a path called /home/ubuntu/ and names that shortcut as new_link   [HARD LINK]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
