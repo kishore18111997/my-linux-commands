@@ -290,7 +290,70 @@
 - shows details of all jobs running in background
 
 74) fg 1
-brings back the job number 1 that is running in background to foreground
+- brings back the job number 1 that is running in background to foreground
+
+76 > file.txt
+- puts a empty content into file.txt, thereby emptying it
+
+77) sudo systemctl stop iptables
+- to stop the default firewall in linux
+
+78) sudo systemctl start iptables
+- to start the default firewall in linux
+
+79) sudo systemctl start firewalld
+- to start firewall in linux
+
+80) sudo systemctl stop firewalld
+- to stop firewall in linux
+
+81) uname -r 
+- to check the kerenel ID of linux machine
+
+
+
+82) [tar commands]    if any commands are not working please add -v tag along with the tag v for verbose
+
+
+
+82.1) tar -cf foldername
+- creates a zip folder for a folder called foldername [c for create, f for specify filename]
+
+82.2) tar -czf foldername
+- to create a compressed zip folder for a folder called foldername
+
+82.3) tar -tf foldername.tar
+- to show the contents of foldername.tar
+
+82.4) tar -xf foldername.tar 
+- to extract foldername.tar
+
+82.5) tar -xf foldername.tar -C /home/ubuntu/extractfolder
+- to extract foldername.tar to a path called /home/ubuntu/extractfolder
+ 
+83.6) tar -xzf foldename.gz
+- to extract a compressed folder called foldername.gz
+
+84.7) tar -uvf foldername.tar newfile.txt
+- to update the new file called newfile.txt to foldername.tar
+
+84.8) tar -rvf foldername.tar oldfile.txt
+- to remove the file called oldfile.txt from foldername.txt 
+
+
+
+85) tac file.txt
+- to show the contents of a file in reverse order
+
+86) lp file.txt 
+- to print the contents of file.txt
+
+
+
+
+
+
+
 
 
 
