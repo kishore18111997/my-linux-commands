@@ -141,7 +141,7 @@
 - to change application_name to a different version if already installed
 
 
-
+____________________________________________________________________________________________________________________________________
 48) [grep commands]
 
 
@@ -169,9 +169,9 @@
 
 48.8) grep kishore -c mail.txt
 - displays the count of word kishore in a file called mail.txt
+____________________________________________________________________________________________________________________________________
 
-
-
+____________________________________________________________________________________________________________________________________
 49) [awk commands]
 
 
@@ -197,18 +197,22 @@
 49.7) df -h | awk '{print $1"\t"$2"\t"$4}'
 - you can also run awk on other command outputs using piping
 - this command shows the contents of column 1,2,4 from the output of df -h command
-
+____________________________________________________________________________________________________________________________________
 
 
 50) [sed commands]
 
 
-
+____________________________________________________________________________________________________________________________________
 50.1) sed 's/rama/bhima/' mail.txt
 - this command will display all the string from the file called mail.txt by replacing a string called rama into bhima but does not changge it in the file
 
 50.2) sed -i 's/rama/bhima/' mail.txt
 - this command will change all words called rama into bhima in mail.txt file and keep the changes
+____________________________________________________________________________________________________________________________________
+
+
+
 
 51) uptime
 - shows the age of the system, also shows the number of users logged in at the present time
@@ -249,7 +253,7 @@
 
 62) ln /etc/sudo/sudoers.config /home/ubuntu/new_link
 - creates a shortcut of /etc/sudo/sudoers.config in a path called /home/ubuntu/ and names that shortcut as new_link   [HARD LINK]
-
+____________________________________________________________________________________________________________________________________
 63) find /home/ubuntu -name "*.txt"
 - displays all files from /home/ubuntu directory that ends with .txt prefix
 
@@ -267,6 +271,8 @@
 
 66) find -type f -name image2021*.jpg -exec chmod -R root:root {} +
 - finds all files named as image2021*.jpg and performs "chmod -R root:root" command on each file 
+____________________________________________________________________________________________________________________________________
+
 
 67) history
 - gives the history of all the commands that are run
@@ -311,7 +317,7 @@
 - to check the kerenel ID of linux machine
 
 
-
+____________________________________________________________________________________________________________________________________
 82) [tar commands]    if any commands are not working please add -v tag along with the tag v for verbose
 
 
@@ -339,7 +345,7 @@
 
 84.8) tar -rvf foldername.tar oldfile.txt
 - to remove the file called oldfile.txt from foldername.txt 
-
+____________________________________________________________________________________________________________________________________
 
 
 85) tac file.txt
@@ -350,8 +356,39 @@
 
 
 
+____________________________________________________________________________________________________________________________________
+[ chmod commands ]
 
+87.1) chmod -r file_name
+- to remove read permission for file_name
 
+87.2) chmod +r file_name
+- to give read permission for file_name
+
+87.3) chmod -w file_name
+- to remove write permission for file_name
+
+87.4) chmod +w file_name
+- to give write permission for file_name
+
+87.5) chmod -x file_name
+- to remove write permission for file_name
+
+87.6) chmod +x file_name
+- to give write permission for file_name
+
+- there are 8 numbers from 0-7
+each number denote each permission
+
+0 - no permission
+1 - execute only
+2 - write only
+3 - write and execute
+4 - read only
+5 - read and execute
+6 - read and write 
+7 - read write execute
+____________________________________________________________________________________________________________________________________
 
 
 
