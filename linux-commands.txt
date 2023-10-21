@@ -390,7 +390,8 @@ each number denote each permission
 7 - read write execute
 ____________________________________________________________________________________________________________________________________
 
-
+sudo lsof -i -n
+- to know whic service is running in which port number
 
 
 
