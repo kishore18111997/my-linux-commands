@@ -393,8 +393,17 @@ ________________________________________________________________________________
 sudo lsof -i -n
 - to know whic service is running in which port number
 
+who
+- to know the name of the user you are logged in as
 
+last
+- gives the output of all the names of users who logged in to the server
 
+last -5 
+- gives the output of last 5 names of users who logged in to the server
+
+lsb_release -a
+- to know the version of ubuntu you are using
 
 
 
